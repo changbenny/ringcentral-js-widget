@@ -1,5 +1,6 @@
 const path = require('path');
 const dir = require('node-dir');
+const fs = require('fs');
 
 function walk(src, callback) {
   dir.readFiles(src, { match: /.css$/ },
